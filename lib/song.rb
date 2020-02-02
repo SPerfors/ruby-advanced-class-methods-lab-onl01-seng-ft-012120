@@ -42,15 +42,7 @@ class Song
   end
   
   def self.alphabetical(name)
-    self.all.sort_by do |a, b|
-      if a == b 
-        0 
-      elsif a > b 
-        1 
-      else a < b 
-        -1
-      end
-    end
+    self.all.sort_by{|s| s.name}
   end
     
   def self.new_from_filename(name)
