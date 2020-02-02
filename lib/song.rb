@@ -45,7 +45,9 @@ class Song
     self.all.sort do |a,b|
       if a == b 
         0 
-        elsif a
+      elsif a > b 
+        1 
+        
   end
     
   def self.new_from_filename(name)
