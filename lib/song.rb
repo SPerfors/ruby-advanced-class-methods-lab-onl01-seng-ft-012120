@@ -42,7 +42,7 @@ class Song
   end
   
   def self.alphabetical
-    self.all.sort do |a,b|
+    self.all.sort do |a, b|
       if a == b 
         0 
       elsif a > b 
