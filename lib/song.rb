@@ -43,7 +43,9 @@ class Song
   
   def self.alphabetical
     self.all.sort do |a,b|
-      if 
+      if a == b 
+        0 
+        elsif a
   end
     
   def self.new_from_filename(name)
