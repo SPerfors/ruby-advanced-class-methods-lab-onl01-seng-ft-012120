@@ -47,6 +47,10 @@ class Song
         0 
       elsif a > b 
         1 
+      else a < b 
+        -1
+      end
+    end
         
   end
     
