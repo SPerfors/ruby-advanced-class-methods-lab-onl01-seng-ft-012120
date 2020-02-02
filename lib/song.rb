@@ -41,7 +41,7 @@ class Song
     end
   end
   
-  def self.alphabetical()
+  def self.alphabetical(name)
     self.all.sort_by do |a, b|
       if a == b 
         0 
